@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReviewPage</class>
+ <widget class="QWidget" name="ReviewPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>631</width>
+    <height>501</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #3498DB;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 6px;
+}
+QPushButton:hover {
+    background-color: #2980B9;
+}
+
+QComboBox {
+    background-color: #3498DB;
+    color: white;                 /* Màu chữ xanh đậm */
+    border: 1px solid #3399cc;
+    border-radius:6px;
+    padding: 4px 8px;
+    font-weight: bold;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #3498DB;
+    color: white;     
+    selection-background-color: #99ccff;
+    selection-color: #003344;
+	border: 1px solid #3399cc;
+    border-radius:6px;
+}
+</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,2">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>35</number>
+        </property>
+        <item>
+         <widget class="QComboBox" name="level_box">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>HSK1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HSK2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HSK3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HSK4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HSK5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HSK5</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="start_question_button">
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Bắt đầu </string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #3498DB;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 6px;
+}
+QPushButton:hover {
+    background-color: #2980B9;
+}
+</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_7" stretch="1,2,2">
+        <item>
+         <widget class="QWidget" name="question" native="true"/>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QRadioButton" name="optionA">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="optionB">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="optionC">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="optionD">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6" stretch="2,1,2">
+          <item>
+           <widget class="QPushButton" name="check_button">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Check</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="result">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="next_question_button">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Câu tiếp theo</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
